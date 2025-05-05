@@ -1,0 +1,628 @@
+/* Common style start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+        --pink: #ff007f;
+        --gray: #efefef;
+        --purple: #5a3baf;
+}
+
+html{
+        scroll-behavior: smooth;
+}
+button,
+body {
+        font-family: "Poppins", sans-serif;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+p{
+        font-size: 14px;
+        line-height: 26px;
+}
+
+
+.fullContainer{
+        width: 100%;
+}
+
+.container{
+        width: 1140PX;
+        margin: auto;
+}
+
+
+.sectionTitle{
+        width: 300px;
+        border-bottom: 3px solid var(--pink);
+        text-align: center;
+        font-size: 2 rem;
+        font-weight: 200;
+        margin: 0 auto 50px;
+        position: realative;
+        padding: 10px 0;
+        text-transform: uppercase;
+
+}
+section{
+        padding: 100px 0;
+        position: relative;
+}
+
+
+/* Common style start*/
+
+/*Home style start*/
+
+header{
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        z-index: 2;
+}
+
+header .container {
+        display: flex;
+        justify-content: space-between;
+}
+
+header .container .logo {
+        padding: 20px 0;
+        height: 120px;
+        display: flex;
+        align-items: center;
+
+}
+
+header .container .logo img {
+        height: 120%;
+        width: 44%;
+}
+
+header nav ul{
+        List-style-type: none;
+}
+
+header nav ul li{
+        display: inline-block;
+}
+
+header nav ul li a {
+        display: inline-block;
+        height: 75px;
+        line-height: 75px;
+        padding: 0 15px;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 16px;
+        color: #fff;
+        transition: 0.3s;
+}
+
+header nav ul li a:hover {
+        background-color: var(--pink);
+}
+
+.banner{
+        min-height: 100vh;
+        width: 100%;
+        background-image: url("../images/kids-3539885_1280.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+}
+
+.banner h1{
+        margin-top: 230px;
+        display: inline-block;
+        font-size: 3.5rem;
+        color: #fff;
+        text-shadow: 0 0 2px #fff;
+        width: 50%;
+        line-height: 4.2rem;
+        font-weight: 100;
+
+}
+
+.banner h1 span{
+        background-color: var(--purple);
+        display: inline-block;
+        line-height: 3.5rem;
+        padding: 0 15px;
+        font-weight: 600;
+        border-radius: 5px;
+}
+
+.banner p {
+        color:#fff;
+        width: 50%;
+        text-shadow: 0 0 2px #efefef;
+        margin-top: 10px;
+}
+
+.banner button{
+        background-color: var(--pink);
+        border: 3px solid var(--purple);
+        outline: none;
+        color: #fff;
+        padding: 10px 15px;
+        margin-top: 20px;
+        font-size: 16px;
+        border-radius: 3px;
+        font-weight: 600;
+}
+/* Home style start */
+
+
+/* AboutSection Start */
+
+#about .sectionTitle{
+        color: black;
+        text-shadow: 0 0 4px #010000;
+        font-size: 25px;
+}
+#aboutSection .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 50px;
+        position: relative;
+        height: 245px;
+}
+#aboutSection .cards > div{
+        width: 350px;
+        background-color: lightpink;
+        padding: 35px;
+        color: #444;
+        text-align: center;
+        border-radius: 15px;
+        height: 215px;
+        border: 1px solid #ccc;
+        transition: 0.4s;
+}
+
+#aboutSection .cards > div:hover{
+        width: 400px;
+        margin-top: -20px;
+        border-color: var(--pink);
+        padding: 55px;
+        height: auto;
+}
+
+#aboutSection .cards > div .tittle{
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+}
+
+#aboutSection .cards > div p{
+        font-size: 14px;
+        margin-top: 15px;
+        line-height: 20px;
+
+}
+
+#aboutSection .cards > div button{
+        border: 1px solid var(--purple);
+        outline: none;
+        padding: 7px 15px;
+        margin-top: 15px;
+        font-size: 12px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: 0.3s;
+
+}
+
+#aboutSection .cards > div:hover button{
+        background-color: var(--purple)
+        color #fff;
+}
+/* AboutSetion end */
+
+/* program section start */
+
+.programs{
+        background-color: lightpink;
+}
+
+.programs .boxContainer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 50px;
+}
+
+.programs .boxContainer .box{
+        background-color: #fff;
+        text-align: center;
+        padding-bottom: 25px;
+        border-radius: 5px;
+        box-shadow: 0 0 3px 0 #c5c5c5;
+        position: relative;
+        margin-bottom: 15px;
+}
+
+.programs .boxContainer .box .cardImage{
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px 5px 0 0;
+}
+
+.programs .boxContainer .box .cardImage:after{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        filter: grayscale(100%);
+        transition: 0.3s;
+}
+
+.programs .boxContainer .box:nth-child(1) .cardImage,
+.programs .BoxContainer .box:nth-child(1) .cardImage:after{
+        background-image: url("../images/programs/istockphoto-1170717275-612x612.jpg");
+}
+
+.programs .boxContainer .box:nth-child(2) .cardImage,
+.programs .BoxContainer .box:nth-child(2) .cardImage:after{
+        background-image: url("../images/programs/mib_header_1.png");
+}
+
+.programs .boxContainer .box:nth-child(3) .cardImage,
+.programs .BoxContainer .box:nth-child(3) .cardImage:after{
+        background-image: url("../images/programs/2.jpg");
+}
+
+.programs .boxContainer .box:nth-child(4) .cardImage,
+.programs .BoxContainer .box:nth-child(4) .cardImage:after{
+        background-image: url("../images/programs/DocVisit_1300x@2x.jpg.webp");
+}
+
+.programs .boxContainer .box:hover .cardImage:after{
+        top: 100%;
+}
+
+.programs .boxContainer .box .programTitle{
+        font-size: 15px;
+        margin-top: 15px;
+        font-weight: 600;
+        color: #444;
+
+}
+
+.programs .boxContainer .box .donationCount{
+        font-size: 13px;
+        font-weight: 600;
+        color: #444;
+        margin-top: 10px;
+}
+
+.programs .boxContainer .box .donationCount  span{
+        color: var(--purple);
+}
+
+.programs .boxContainer .box button{
+        position: absolute;
+        left: 50%;
+        background-color:lightpink
+        color #fff;
+        transform: translate(-50%, 0);
+        font-size: 12px;
+        bottom: -20px;
+        border-radius: 50px;
+        padding: 10px 20px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+}
+
+/* program section end */
+
+/* eduction section start */
+
+.education {
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+
+}
+
+.education .videoPlayer{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        width: 80%;
+        height: 80%;
+        transform: translate(-50%, -50%);
+
+
+}
+
+.education .sectionTitle{
+        color: #fff;
+        text-shadow: 0 0 4px #000;
+        font-size: 25px;
+}
+
+.education .educationContainer{
+        position: absolute;
+        background-color: #00000096;
+        width: 600px;
+        top: 35vh;
+        color: #fff;
+        text-shadow: 0 0 3px #000;
+        padding: 30px;
+}
+
+.education .educationContainer h3{
+        font-size: 35px;
+        font-weight: 300;
+}
+
+.education .educationContainer p{
+        font-size: 15px;
+        line-height: 20px;
+        margin: 10px o 30px;
+}
+
+.education .educationContainer button{
+        background-color: lightpink;
+        border:0;
+        color: #fff;
+        padding: 10px 25px;
+        font-weight: bold;
+        font-size: 14px;
+        outline: none;
+}
+
+
+/* education section end */
+
+/* gallery start here */
+
+.gallery .sectionTitle{
+        color: black;
+        text-shadow: 0 0 4px #efeaea;
+        font-size: 25px;
+}
+
+.gallery{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+}
+
+.gallery img{
+        width: 200px;
+        height: auto;
+        border-radius: 8px
+}
+
+.gallery{
+        background-color: lightpink;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      
+}
+
+.gallery img{
+        width: 200px;
+        height: auto;
+        border-radius: 8px;
+}
+.gallery .gallleryContainer {
+        column-count: 8;
+        column-gap: 10px;
+}
+
+.gallery .galleryContainer .item{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+        overflow: hidden;
+}
+
+.gallery .galleryContainer img{
+        width: 20%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        transition: 0.4s;
+}
+
+.gallery .galleryContainer .title{
+        position: absolute;
+        background-color: var(--gray);
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: bold;
+        opacity: 0;
+        z-index: 1;
+        transition: 0.4s;
+}
+ 
+.gallery .galleryContainer .item:hover .title{
+        opacity:1; 
+}
+
+.gallery .galleryContainer .item:hover img{
+        transform: scale(1.2);
+}
+/* gallery end here */
+
+/* Join Section start here */
+
+.join{
+        background-image: url("../images/pattern.jpg");
+        color: #fff;
+
+}
+
+.join .joinTitle{
+        font-size: 40px;
+        font-weight: 100;
+}
+
+.join .joinTitle span{
+        font-weight: 800;
+}
+
+.join button{
+        padding: 7px 15px;
+        margin-top: 20px;
+        border: 0;
+        outline: none;
+        font-weight: 600;
+        font-size: 16px;
+
+}
+
+.join button.joinNow{
+        margin-right: 10px;
+        background-color: #424242;
+        color: #fff;
+}
+
+.join button.joinNowBtn {
+        background-color: var(--purple)
+        /* Add any missing styles here if needed */
+}
+
+.join button.joinNow:hover{
+        background-color: var(--pink);
+        color: #fff;
+}
+
+.join button.joinNowBtn:hover{
+        background-color: var(--pink);
+        color: #fff;
+}
+/* Join Section end here*/
+
+/* Footer start here */
+
+footer{
+        background-color: #181818;
+        color: #7f7f7f;
+        padding: 50px 0;
+        font-size: 14px;
+}
+
+footer .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+}
+
+footer .title{
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-bottom: 2px solid;
+        margin-bottom: 30px;
+        padding: 0 0 5px 0;
+}
+
+footer p{
+        margin-bottom: 10px;
+}
+
+footer .linksContainers ul{
+        list-style-type: none;
+}
+
+footer .linksContainer ul li a{
+        text-decoration: none;
+        color: #7f7f7f;
+        margin-bottom: 10px;
+        display: inline-block;
+}
+
+footer .newsLetterContainer img{
+        height: 80px;
+        margin-bottom: 11px;
+        width: 80px;
+}
+
+footer .newsLetterContainer input{
+        background-color: transparent;
+        border: 1px solid #7f7f7f;
+        outline: none;
+        padding: 10px 15px;
+        width: 100%;
+        margin-top: 10px;
+        color: #ccc;
+        border-radius: 30px;
+
+}
+
+footer .newsLetterContainer button{
+        background-color: var(--pink);
+        border: 0;
+        outline: none;
+        padding: 10px 15px;
+        width: 100%;
+        margin-top: 10px;
+        color: #fff;
+        border-radius: 30px;
+        font-size: 14px;
+        font-weight: 600;
+}
+
+footer .newsLetterContainer button:hover{
+        background-color: var(--purple);
+}
+/* Footer end here */
+
+/* Responsive Code start here */
+
+@media screen and (max-width: 1140px){
+        .container{
+                width: 100%;
+                padding: 0 15px;
+        }
+}
+@media screen and ( max-width: 1000px){
+        .banner h1{
+                margin-top: 200px;
+        }
+        #aboutSection .cards{
+                justify-content: space-around;
+                height: auto;
+                flex-direction: column;
+        }
+        #aboutSection .cards > div{
+                margin: 10px 0;
+        }
+}
+
+@media screen and (max-width: 1024px){
+        .banner{
+                background-position-x: 45%;
+        }
+        .banner h1{
+                font-size: 2.5ram;
+        }
+        .program .boxContainer{
+                grid-template-columns: repeat(2, 1fr);
+        }
+}
+
+/* Responsive Code start here */
